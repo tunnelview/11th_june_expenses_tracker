@@ -1,0 +1,25 @@
+### user api
+### registration
+POST http://localhost:8000/api/v1/users
+Content-Type: application/json
+
+{
+    "name": "test name",
+    "email": "test@email",
+    "password": "123456"
+}
+
+### user login
+POST http://localhost:8000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "test@email",
+    "password": "123456"
+}
+
+
+### ==== transactioin api
+
+GET http://localhost:8000/api/v1/transactions
+Authorization: 6292e99287a65aa8a945d94f
